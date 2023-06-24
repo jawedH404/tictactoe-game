@@ -18,9 +18,10 @@ const Board = () => {
     });
   };
 
+
   const renderSquare = position => {
     return (
-      <square
+      <Square
         value={squares[position]}
         onClick={() => handleSquareClick(position)}
       />
@@ -42,7 +43,7 @@ const Board = () => {
       <div className="board-row">
         {renderSquare(6)}
         {renderSquare(7)}
-        {renderSquare(83)}
+        {renderSquare(8)}
       </div>
     </div>
   );
